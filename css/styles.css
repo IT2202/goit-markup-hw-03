@@ -123,21 +123,20 @@ margin-left: auto;
 .intro {
     background-color: #2E2F42;
 }
+/* padding: 188px 472px 292px 188px; */
 
 .intro-container {
-    padding: 188px 472px 292px 188px;
-
+padding: 188px 472px 292px 188px;
 }
 
 .intro-title {
     color: #FFF;
-        text-align: center;
+        align-self: auto;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         max-width: 496px;
         margin-bottom: 48px;
-        
 }
 
 .intro-container-button {
@@ -285,8 +284,8 @@ margin-left: auto;
 }
 
 .prodacts-item {
-border: 1px solid var(--CORNFLOWER, #E7E9FC);
-    background: var(--WHITE, #FFF);
+border: 1px solid  #E7E9FC;
+    background-color: #FFF;
     max-width: 360px;
     margin-bottom: 48px;
 }
