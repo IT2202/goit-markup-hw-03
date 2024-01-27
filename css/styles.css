@@ -126,32 +126,27 @@ margin-left: auto;
 
 .intro {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
 }
 
 .intro-container {
-padding-top: 188px;
-padding-bottom: 188px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 .intro-title {
     color: #FFF;
-        align-self: auto;
+        text-align: center;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         max-width: 496px;
+        margin: 0 auto;
         margin-bottom: 48px;
 }
-
-/* .intro-container-button {
-    background-color: #4D5AE5;
-    display: inline-flex;
-    padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-} */
 
 .intro-button {
     color: #FFF;
@@ -160,13 +155,12 @@ padding-bottom: 188px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        display: block;
         min-width: 169px;
+        height: 56px;
         border: none;
         cursor: pointer;
         border-radius: 4px;
         background-color: #4D5AE5;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .intro-button:hover,
@@ -183,8 +177,14 @@ padding-bottom: 188px;
 }
 
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
 .feature-list {
@@ -237,7 +237,6 @@ padding-bottom: 188px;
 .team-list {
     background-color: #F4F4FD;
     display: flex;
-    gap: 24px;
 }
 
 .team-item {
@@ -294,6 +293,7 @@ padding-bottom: 188px;
 .prodacts-list {
     display: flex;
     row-gap: 48px;
+    column-gap: 24px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -307,7 +307,7 @@ padding-bottom: 188px;
 .prodacts-name {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
-    
+    border-top: none;
 }
 
 .prodacts-image {
