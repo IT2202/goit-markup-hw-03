@@ -8,6 +8,10 @@ p, h1, h2, h3, h4, h5, h6 {
 margin: 0;
 }
 
+img {
+    display: block;
+}
+
 p {
 margin: 0;
 }
@@ -35,7 +39,7 @@ a {
 
 
 .header {
-    border-bottom: 1px solid var #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -123,10 +127,10 @@ margin-left: auto;
 .intro {
     background-color: #2E2F42;
 }
-/* padding: 188px 472px 292px 188px; */
 
 .intro-container {
-padding: 188px 472px 292px 188px;
+padding-top: 188px;
+padding-bottom: 188px;
 }
 
 .intro-title {
@@ -139,7 +143,7 @@ padding: 188px 472px 292px 188px;
         margin-bottom: 48px;
 }
 
-.intro-container-button {
+/* .intro-container-button {
     background-color: #4D5AE5;
     display: inline-flex;
     padding: 16px 32px;
@@ -147,7 +151,7 @@ padding: 188px 472px 292px 188px;
     gap: 10px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .intro-button {
     color: #FFF;
@@ -156,6 +160,10 @@ padding: 188px 472px 292px 188px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
+        display: block;
+        min-width: 169px;
+        border: none;
+        cursor: pointer;
         border-radius: 4px;
         background-color: #4D5AE5;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -164,7 +172,6 @@ padding: 188px 472px 292px 188px;
 .intro-button:hover,
 .intro-button:focus {
     background-color: #404BBF;
-    cursor: pointer;
 }
 
 
@@ -176,7 +183,8 @@ padding: 188px 472px 292px 188px;
 }
 
 .visually-hidden {
-    
+    position: fixed;
+    transform: scale(0);
 }
 
 .feature-list {
@@ -198,6 +206,7 @@ padding: 188px 472px 292px 188px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 
 .feature-item-text {
@@ -228,16 +237,21 @@ padding: 188px 472px 292px 188px;
 .team-list {
     background-color: #F4F4FD;
     display: flex;
-    gap: 32px;
+    gap: 24px;
 }
 
 .team-item {
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
     
 }
 
+.team-member {
+    padding: 32px 0;
+}
+
 .team-image {
-    margin-bottom: 32px;
+    
  
 }
 
@@ -257,7 +271,7 @@ padding: 188px 472px 292px 188px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        padding-bottom: 32px;
+       
 }
 
                                                /* SECTION 4 */
@@ -279,19 +293,25 @@ padding: 188px 472px 292px 188px;
 
 .prodacts-list {
     display: flex;
-    gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .prodacts-item {
-border: 1px solid  #E7E9FC;
+    width: calc((100% - 48px) / 3);
     background-color: #FFF;
-    max-width: 360px;
-    margin-bottom: 48px;
+    
+}
+
+.prodacts-name {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    
 }
 
 .prodacts-image {
-    margin-bottom: 32px;
+    
 }
 
 .prodacts-subtitle {
@@ -300,9 +320,7 @@ border: 1px solid  #E7E9FC;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        margin-bottom: 32px;
-        padding: 0 16px; 
-
+        margin-bottom: 8px; 
 }
 
 .prodacts-text {
@@ -310,8 +328,6 @@ border: 1px solid  #E7E9FC;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        padding-bottom: 32px;
-        padding: 0 16px;
 }
 
                                                  /* FOOTER */
@@ -321,7 +337,7 @@ border: 1px solid  #E7E9FC;
     max-width: 1440px;
     max-height: 312px;
     flex-shrink: 0;
-    padding: 101.5px 1240px 189.5px 156px;
+    padding: 100px 0
 }
 
 .footer-logo {
@@ -332,6 +348,7 @@ color: #4d5ae5;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
