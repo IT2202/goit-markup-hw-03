@@ -76,7 +76,6 @@ a {
 .header-menu-list {
 color: #4D5AE5;
 display: flex;
-margin-left: 76px;
 gap: 40px;
 display: flex;
 }
@@ -369,5 +368,4 @@ color: #F4F4FD;
         line-height: 1.5;
         letter-spacing: 0.02em;
         width: 264px;
-        margin-top: 16px;
 }
